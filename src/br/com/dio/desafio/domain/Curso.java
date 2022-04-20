@@ -9,10 +9,9 @@ public class Curso extends Conteudo {
     }
 
     public Curso(Long id, String titulo, String descricao, Double cargaHoraria) {
+        super(titulo, descricao);
         this.id = id;
         this.cargaHoraria = cargaHoraria;
-        setTitulo(titulo);
-        setDescricao(descricao);
     }
 
     @Override

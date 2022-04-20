@@ -11,10 +11,9 @@ public class Mentoria extends Conteudo {
     }
 
     public Mentoria(Long id, String titulo, String descricao, LocalDate data) {
+        super(titulo, descricao);
         this.id = id;
         this.data = data;
-        setTitulo(titulo);
-        setDescricao(descricao);
     }
 
     @Override
