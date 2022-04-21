@@ -6,7 +6,6 @@ import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.HashSet;
 import java.util.LinkedHashSet;
-import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
@@ -33,5 +32,15 @@ public class Main {
         bernardo.inscreverBootcamp(bootcamp);
         System.out.println("Conteudos Inscritos Camila" + camila.getConteudosInscritos());
         System.out.println("Conteudos Inscritos Bernardo" + camila.getConteudosInscritos());
+        System.out.println("Conteudos Concluidos Camila" + camila.getConteudosConcluidos());
+        System.out.println("Conteudos Concluidos Bernardo" + camila.getConteudosConcluidos());
+        camila.progredir();
+        bernardo.progredir();
+        bernardo.progredir();
+        System.out.println("Conteudos Concluidos Camila" + camila.getConteudosConcluidos());
+        System.out.println("Conteudos Concluidos Bernardo" + camila.getConteudosConcluidos());
+
+        System.out.println("Camila XP: " + camila.calcularTotalXp());
+        System.out.println("Bernardo XP: " + bernardo.calcularTotalXp());
     }
 }
